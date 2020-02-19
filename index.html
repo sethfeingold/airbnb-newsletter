@@ -8,24 +8,47 @@
     <style>
 
         body {
-            font-family: sans-serif;
-            margin: 0 auto;
+            font-family: sans-serif !important;
+        }
+
+        table[class="content-container"] {
+            width: 600px;
         }
     
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 600px) { /* classes for devices under 600px width */
+
+
             table[class="content-container"] {
-                width: 100%;
+                width: 100% !important;
             }
+
+            span[class="mobile-subheading"] {
+                font-size: 1.4rem !important;
+            }
+
+            span[class="mobile-text"] {
+                font-size: 1.2rem !important;
+            }
+
+            span[class="mobile-header"] {
+                font-size: 2.5rem !important;
+            }
+
+            img[class="mobile-square-icon"] {
+                width: 175px !important;
+                height: auto !important;
+            }
+
         }
     </style>
 </head>
 <body>
     <!-- Full width email container -->
-    <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: rgb(240, 240, 240)">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: rgb(240, 240, 240); margin: 0 auto;">
         <tr>
             <td>
                 <!-- 600px email content container -->
-                <table class="content-container" cellpadding="0" cellspacing="0" border="0" width="600" align="center">
+                <table class="content-container" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;">
                     <tr>
                         <td>
                             <!-- Main newsletter heading -->
@@ -37,13 +60,13 @@
                                     </td>
                                     <!-- month text -->
                                     <td style="float: right; color: rgb(90, 90, 90); margin-top: 15px;">
-                                        February
+                                        <span class="mobile-text">February</span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <!-- large "host newsletter text" -->
                                     <td style="text-align: center; color: rgb(55, 175, 145);">
-                                        <h1>Host Newsletter</h1>
+                                        <h1><span class="mobile-header">Host Newsletter</span></h1>
                                     </td>
                                 </tr>
                             </table>
@@ -59,7 +82,7 @@
                                 <!-- Large central image -->
                                 <tr>
                                     <td style="text-align: center;">
-                                        <img src="https://repeatingislands.files.wordpress.com/2012/07/facebook.jpg" alt="lecture hall cartoon" width="550" height="auto">
+                                        <img class="responsive-image" src="https://repeatingislands.files.wordpress.com/2012/07/facebook.jpg" alt="lecture hall cartoon" width="92%" height="auto">
                                     </td>
                                 </tr>
                                 <!-- Airbnb keynote livestream call to action -->
@@ -67,7 +90,7 @@
                                     <!-- Airbnb keynote heading -->
                                     <td style="padding-left: 25px;">
                                         <h2 style="color: rgb(80, 80, 80); font-size: 1.6rem; font-weight: 600;">The next Airbnb, inspired by you</h2>
-                                        <p style="color: rgb(90, 90, 90);">We're announcing new ways to stand out, earn more, and attract the guests who'll love your home. Watch the keynote live on February 22nd.</p>
+                                        <p style="color: rgb(90, 90, 90);"><span class="mobile-text">We're announcing new ways to stand out, earn more, and attract the guests who'll love your home. Watch the keynote live on February 22nd.</span></p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -77,7 +100,7 @@
                                             <table class="clickable-button" style="border-radius: 25px; margin-left: 25px; margin-bottom: 25px; background-color: rgb(55, 175, 145); padding: 10px; width: auto;">
                                                 <tr>
                                                     <td>
-                                                        RSVP to join the livestream
+                                                        <span class="mobile-text">RSVP to join the livestream</span>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -97,12 +120,12 @@
                             <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: white;">
                                 <tr>
                                     <td style="padding: 25px;">
-                                        <img src="https://i.pinimg.com/originals/3a/75/3a/3a753a1a4fe04634078fc3905f576839.png" alt="san francisco cartoon icon" width="125" height="auto" >
+                                        <img class="mobile-square-icon" src="https://i.pinimg.com/originals/3a/75/3a/3a753a1a4fe04634078fc3905f576839.png" alt="san francisco cartoon icon" width="125" height="auto" >
                                     </td>
                                     <td style="padding: 0px 25px 20px 0;">
-                                        <h3 style="color: rgb(80, 80, 80);">You can still register your listing in SF!</h3>
-                                        <p style="color: rgb(90, 90, 90);">Interested in hosting in San Francisco for less than 30 days at a time? Even if you missed the registration deadline, you can still register your listing with the City directly from our website or mobile app.</p>
-                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#">Register your listing</a>
+                                        <h3 style="color: rgb(80, 80, 80);"><span class="mobile-subheading">You can still register your listing in SF!</span></h3>
+                                        <p style="color: rgb(90, 90, 90);"><span class="mobile-text">Interested in hosting in San Francisco for less than 30 days at a time? Even if you missed the registration deadline, you can still register your listing with the City directly from our website or mobile app.</span></p>
+                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#"><span class="mobile-text">Register your listing</span></a>
                                     </td>
                                 </tr>
                             </table>
@@ -119,12 +142,12 @@
                             <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: white;">
                                 <tr>
                                     <td style="padding: 25px;">
-                                        <img src="https://cdn3.iconfinder.com/data/icons/aami-flat-real-estate/64/real_estate-37-512.png" alt="home improvements icon" width="125" height="auto" >
+                                        <img class="mobile-square-icon" src="https://cdn3.iconfinder.com/data/icons/aami-flat-real-estate/64/real_estate-37-512.png" alt="home improvements icon" width="125" height="auto" >
                                     </td>
                                     <td style="padding: 0px 25px 20px 0;">
-                                        <h3 style="color: rgb(80, 80, 80);">Home improvements with hosting in mind</h3>
-                                        <p style="color: rgb(90, 90, 90);">We asked hosts about their plans for improving their spaces and got a lot of great ideas. Some were simple and practical, like replacing towels, and others made our hearts flutter, like converting a garage into a music room. Read about their ideas and start dreaming up your own.</p>
-                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#">Get inspired</a>
+                                        <h3 style="color: rgb(80, 80, 80);"><span class="mobile-subheading">Home improvements with hosting in mind</span></h3>
+                                        <p style="color: rgb(90, 90, 90);"><span class="mobile-text">We asked hosts about their plans for improving their spaces and got a lot of great ideas. Some were simple and practical, like replacing towels, and others made our hearts flutter, like converting a garage into a music room. Read about their ideas and start dreaming up your own.</span></p>
+                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#"><span class="mobile-text">Get inspired</span></a>
                                     </td>
                                 </tr>
                             </table>
@@ -140,12 +163,12 @@
                             <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: white;">
                                 <tr>
                                     <td style="padding: 25px;">
-                                        <img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/vprojectold1-aum-135_2.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=7e5b5b6a46ca2063517c3e18622c64d9" alt="helping hands with heart icon" width="125" height="auto" >
+                                        <img class="mobile-square-icon" src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/vprojectold1-aum-135_2.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=7e5b5b6a46ca2063517c3e18622c64d9" alt="helping hands with heart icon" width="125" height="auto" >
                                     </td>
                                     <td style="padding: 0px 25px 20px 0;">
-                                        <h3 style="color: rgb(80, 80, 80);">Open your home to people in need</h3>
-                                        <p style="color: rgb(90, 90, 90);">When you host someone who's been displaced by a disaster or war, you're making an impact during a critical time in their life.<br/>Join the movement of Airbnb hosts who are providing temporary housing to those who need it most.</p>
-                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#">Learn more</a>
+                                        <h3 style="color: rgb(80, 80, 80);"><span class="mobile-subheading">Open your home to people in need</span></h3>
+                                        <p style="color: rgb(90, 90, 90);"><span class="mobile-text">When you host someone who's been displaced by a disaster or war, you're making an impact during a critical time in their life.<br/>Join the movement of Airbnb hosts who are providing temporary housing to those who need it most.</span></p>
+                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#"><span class="mobile-text">Learn more</span></a>
                                     </td>
                                 </tr>
                             </table>
@@ -161,12 +184,12 @@
                             <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: white;">
                                 <tr>
                                     <td style="padding: 25px;">
-                                        <img src="https://cdn0.iconfinder.com/data/icons/ecology-hazel-vol-1/256/Green-city-512.png" alt="helping hands with heart icon" width="125" height="auto" >
+                                        <img class="mobile-square-icon" src="https://cdn0.iconfinder.com/data/icons/ecology-hazel-vol-1/256/Green-city-512.png" alt="helping hands with heart icon" width="125" height="auto" >
                                     </td>
                                     <td style="padding: 0px 25px 20px 0;">
-                                        <h3 style="color: rgb(80, 80, 80);">Fall in love with your city</h3>
-                                        <p style="color: rgb(90, 90, 90);">See your own city with new eyes so you can share the excitement. We've got ideas for how to experience something totally new to keep your hosting current and your guests wowed.</p>
-                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#">Check this out</a>
+                                        <h3 style="color: rgb(80, 80, 80);"><span class="mobile-subheading">Fall in love with your city</span></h3>
+                                        <p style="color: rgb(90, 90, 90);"><span class="mobile-text">See your own city with new eyes so you can share the excitement. We've got ideas for how to experience something totally new to keep your hosting current and your guests wowed.</span></p>
+                                        <a style="text-decoration: none; color: rgb(55, 175, 145);" href="#"><span class="mobile-text">Check this out</span></a>
                                     </td>
                                 </tr>
                             </table>
@@ -182,7 +205,7 @@
                             <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="background-color: white; text-align: center; color: rgb(90, 90, 90);">
                                 <tr>
                                     <td style="padding: 1.3rem;">
-                                        For more hosting ideas, check out <a style="color: rgb(55, 175, 145); text-decoration: none;" href="#">past editions.</a>
+                                        <span class="mobile-text">For more hosting ideas, check out <a style="color: rgb(55, 175, 145); text-decoration: none;" href="#">past editions.</a></span>
                                     </td>
                                 </tr>
                             </table>
